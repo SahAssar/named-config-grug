@@ -1,0 +1,9 @@
+[Unit]
+Description=named config generation and reload
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/systemctl reload-or-try-restart named
+
+[Install]
+WantedBy=multi-user.target

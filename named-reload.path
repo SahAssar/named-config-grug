@@ -1,0 +1,9 @@
+[Path]
+PathChanged=/etc/tls
+PathChanged=/var/lib/maddy/dkim_keys
+PathChanged=/var/acme-challenge
+PathChanged=/etc/server.env
+PathChanged=/etc/named-config-grug/additional/
+
+[Install]
+WantedBy=multi-user.target
