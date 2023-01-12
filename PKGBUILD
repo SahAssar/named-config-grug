@@ -13,7 +13,6 @@ provides=()
 conflicts=()
 install="script.install"
 package() {
-  cd ../
   depends+=(bind)
   depends+=(server-config-grug)
   mkdir -p "$pkgdir/etc/systemd/system/named.service.d"
